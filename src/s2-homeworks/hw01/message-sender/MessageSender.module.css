@@ -15,6 +15,7 @@
     overflow: hidden;
     border: unset;
     box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .button {
@@ -26,6 +27,10 @@
     width: 120px;
     height: 40px;
     border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
 }
 
 .button:hover {
