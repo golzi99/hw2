@@ -1,20 +1,40 @@
 .input:focus {
+
 }
 
 .input {
+    outline: none;
+    order: 2;
+    border: 1px solid rgba(209, 209, 209, 1);
+    border-radius: 5px;
+    width: 372px;
+    height: 36px;
+    padding: 4px 8px;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .inputWrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .superInput {
+
 }
 
 .errorInput {
+    border: 1px solid rgba(204, 20, 57, 1);
 }
 
 .errorInput:focus {
+
 }
 
 .error {
+    order: 1;
+    color: rgba(204, 20, 57, 1);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
 }
