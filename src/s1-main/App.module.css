@@ -1,13 +1,15 @@
 .App {
     --header_height: 60px;
     width: 1280px;
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
-    gap: 39px;
-    align-items: flex-start;
+    /*align-items: flex-start;*/
     font-family: 'Montserrat', sans-serif;
     padding: 24px;
-    margin: 0 auto;
+    margin: 30px auto;
+    /*margin-top: 30px;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
 }
 
 .hw {
@@ -24,6 +26,7 @@
     line-height: 27px;
     margin-bottom: 10px;
     margin-left: 70px;
+    margin-top: 39px;
 }
 
 textarea, input {
