@@ -1,10 +1,11 @@
 .sidebar {
     position: fixed;
-    top: 0; /* Adjust this value based on the height of the header */
-    left: -250px; /* Initial position off-screen */
-    width: 250px;
+    top: 0;
+    bottom: 0;
+    left: -317px;
+    width: 317px;
     background: rgba(255, 255, 255, 1);
-    height: 100%; /* Adjust this value based on the height of the header */
+
     transition: transform 0.3s ease;
     z-index: 1000;
 
@@ -16,7 +17,7 @@
 }
 
 .sidebar.open {
-    transform: translateX(250px);
+    transform: translateX(317px);
 }
 
 .background {
@@ -39,6 +40,7 @@
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+    color: black;
 }
 
 .nav a:hover {
