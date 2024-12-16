@@ -6,7 +6,7 @@ import SuperDebouncedInput from './common/c8-SuperDebouncedInput/SuperDebouncedI
 import {useSearchParams} from 'react-router-dom'
 
 /*
-* 1 - дописать функцию onChangeTextCallback в SuperDebouncedInput
+* 1 - дописать функцию onChangeTextCallback в SuperDebouncedInput \/
 * 2 - дописать функцию sendQuery в HW14
 * 3 - дописать функцию onChangeText в HW14
 * 4 - сделать стили в соответствии с дизайном
@@ -37,7 +37,9 @@ const HW14 = () => {
                 // делает студент
 
                 // сохранить пришедшие данные
-
+                setLoading(false)
+                if (res)
+                    setTechs(res.data.techs)
                 //
             })
     }
@@ -47,8 +49,9 @@ const HW14 = () => {
         // делает студент
 
         // добавить/заменить значение в квери урла
-        // setSearchParams(
-
+        if (value)
+            setSearchParams({search: value})
+        else setSearchParams()
         //
     }
 
@@ -69,18 +72,23 @@ const HW14 = () => {
             <div className={s2.hwTitle}>Homework #14</div>
 
             <div className={s2.hw}>
-                <SuperDebouncedInput
-                    id={'hw14-super-debounced-input'}
-                    value={find}
-                    onChangeText={onChangeText}
-                    onDebouncedChange={sendQuery}
-                />
+                <div style={{
+                    width: '372px',
+                    position: 'relative'
+                }}>
+                    <SuperDebouncedInput
+                        id={'hw14-super-debounced-input'}
+                        value={find}
+                        onChangeText={onChangeText}
+                        onDebouncedChange={sendQuery}
+                    />
 
-                <div id={'hw14-loading'} className={s.loading}>
-                    {isLoading ? '...ищем' : <br/>}
+                    <div id={'hw14-loading'} className={s.loading}>
+                        {isLoading ? '...ищем' : <br/>}
+                    </div>
+
+                    {mappedTechs}
                 </div>
-
-                {mappedTechs}
             </div>
         </div>
     )
