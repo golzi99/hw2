@@ -1,8 +1,7 @@
 .select {
     display: flex;
     border: 1px solid rgba(194, 194, 194, 1);
-    margin-right: 120px;
-    width: 165px;
+    width: fit-content;
     padding: 5px 10px;
     border-radius: 2px;
 }

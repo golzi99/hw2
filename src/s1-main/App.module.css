@@ -14,6 +14,7 @@
     border-bottom: 1px solid rgba(217, 217, 217, 1);
     border-top: 1px solid rgba(217, 217, 217, 1);
     padding: 24px 70px;
+    position: relative;
 }
 
 .hwTitle {
